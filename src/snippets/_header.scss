@@ -1,7 +1,13 @@
 header.header {
   .nav {
     &__item {
+      font-weight: bold;
       list-style: none;
+
+      a:not(.button) {
+        &:hover {
+        }
+      }
 
       + .nav__item {
         margin-left: 4rem;

@@ -1,0 +1,11 @@
+$primary: #1a1a1a;
+$primary-invert: $white;
+$secondary: #ffe576;
+$secondary-invert: $primary;
+$custom-colors: (
+  "secondary": (
+    $secondary,
+    $secondary-invert,
+  ),
+);
+$text: $primary;
