@@ -1,4 +1,8 @@
 .section {
+  @include mobile {
+    padding: 1rem 1.5rem;
+  }
+
   &--fixed {
     min-height: 100vh;
     min-width: 100vw;
@@ -7,6 +11,8 @@
   }
 
   &--half-up {
-    transform: translateY(-35%);
+    @include desktop {
+      transform: translateY(-35%);
+    }
   }
 }

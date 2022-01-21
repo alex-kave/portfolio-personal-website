@@ -1,6 +1,19 @@
 header.header {
+  padding: 1rem 0;
   position: relative;
   z-index: 3;
+
+  @include desktop {
+    padding: 2rem 0;
+  }
+
+  img {
+    width: 80px;
+
+    @include desktop {
+      width: 120px;
+    }
+  }
 
   .nav {
     &__item {

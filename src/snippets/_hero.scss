@@ -5,6 +5,7 @@
   &-background {
     background-image: url("/src/assets/svg/alexander-driessen-logo-monogram.svg");
     background-repeat: no-repeat;
+    display: none;
     height: 100%;
     left: 0;
     opacity: 0.1;
@@ -12,14 +13,23 @@
     top: 0;
     width: 100%;
     z-index: 1;
+
+    @include desktop {
+      display: block;
+    }
   }
 
   &-wrap {
     align-items: center;
     display: flex;
+    flex-direction: column-reverse;
     padding: 2rem;
     position: relative;
     z-index: 2;
+
+    @include desktop {
+      flex-direction: row;
+    }
 
     &__portrait {
       align-items: center;
@@ -31,16 +41,24 @@
         justify-content: flex-end;
 
         img {
-          width: 600px;
+          @include desktop {
+            width: 600px;
+          }
         }
       }
 
       &__info {
         background-color: $secondary;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        padding: 1.5rem 3rem;
+        padding: 1rem 2rem;
         width: 100%;
+
+        @include desktop {
+          flex-direction: row;
+          padding: 1.5rem 3rem;
+        }
       }
     }
 

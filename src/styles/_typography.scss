@@ -1,7 +1,6 @@
 mark {
   background-color: transparent;
   color: $primary;
-  padding: 0.25rem 0.5rem;
   position: relative;
 
   &::before {
@@ -10,9 +9,9 @@ mark {
     content: "";
     display: inline-block;
     height: 50%;
-    left: 0;
+    left: -5%;
     position: absolute;
-    width: 100%;
+    width: 110%;
     z-index: -1;
   }
 }
