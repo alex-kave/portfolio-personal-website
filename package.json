@@ -17,6 +17,7 @@
     "vite-plugin-live-reload": "^2.1.0"
   },
   "dependencies": {
-    "bulma": "^0.9.3"
+    "bulma": "^0.9.3",
+    "feather-icons": "^4.28.0"
   }
 }
