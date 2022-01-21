@@ -1,0 +1,12 @@
+.section {
+  &--fixed {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    z-index: 2;
+  }
+
+  &--half-up {
+    transform: translateY(-35%);
+  }
+}

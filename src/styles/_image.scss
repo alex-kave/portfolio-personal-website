@@ -1,0 +1,23 @@
+.image {
+  position: relative;
+
+  &--dropshadow {
+    &::before {
+      background-color: $secondary;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translate(1rem, 1rem);
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}
