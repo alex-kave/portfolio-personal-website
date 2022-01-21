@@ -1,4 +1,18 @@
 mark {
-  background-color: $secondary;
+  background-color: transparent;
+  color: $primary;
   padding: 0.25rem 0.5rem;
+  position: relative;
+
+  &::before {
+    background-color: $secondary;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
 }

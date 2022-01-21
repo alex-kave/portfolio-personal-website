@@ -1,4 +1,7 @@
 header.header {
+  position: relative;
+  z-index: 3;
+
   .nav {
     &__item {
       font-weight: bold;

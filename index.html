@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/src/index.scss">
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="/favicon/favicon.png">
+  <script src="/node_modules/feather-icons/dist/feather.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexander Drießen</title>
 </head>
@@ -45,30 +46,95 @@
       </header>
     </div>
   </section>
-  <section class="hero is-medium">
-    <div class="hero-background"></div>
-    <div class="hero-body">
-      <div class="hero-body__portrait">
-        <img src="/src/assets/images/alexander-driessen-portrait-freisteller-schwarz-weiss.png"
-          alt="Portrait Alexander Drießen">
-      </div>
-      <div class="hero-body__cnt">
-        <h1 class="title is-size-1">
-          Hallo, ich bin <mark>Alex!</mark>
-        </h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br /> Optio ex recusandae minima iste deserunt
-          odit
-          magni
-          impedit corrupti non quia.</p>
+  <div class="page-grid">
+    <div class="page-content">
+      <section class="hero is-medium">
+        <div class="hero-background"></div>
+        <div class="hero-wrap">
+          <div class="hero-wrap__portrait">
+            <div class="hero-wrap__portrait__img">
+              <img src="/src/assets/images/alexander-driessen-portrait-freisteller-schwarz-weiss.png"
+                alt="Portrait Alexander Drießen">
+            </div>
+            <div class="hero-wrap__portrait__info">
+              <p class="has-text-weight-bold">
+                Alexander Drießen
+              </p>
+              <p>
+                🎂 17. Februar 1999
+              </p>
+              <p>
+                📍 Köln, Deutschland
+              </p>
+            </div>
+          </div>
+          <div class="hero-wrap__cnt">
+            <h1 class="title is-size-1">
+              Hallo, ich bin <mark>Alex!</mark>
+            </h1>
+            <p class="subtitle is-size-3">Front-End-Entwickler und Mediengestalter aus Köln.</p><br />
+            <p class="is-size-5">Ich entwickle und gestalte digitale Erlebnisse. Aktuell entdecke ich <a
+                href="https://vuejs.org/" target="_blank" title="Vue JS Framework">Vue.js</a> für mich.
+            </p>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="section section--half-up">
+          <div class="container">
+            <div class="columns is-align-items-flex-end">
+              <div class="column is-8">
+                <h2 class="title is-size-3">
+                  Über mich
+                </h2>
+                <p class="is-size-5">
+                  Hallo! Ich bin Alex. Im Sommer 2021 habe ich meine Ausbildung zum Mediengestalter abgeschlossen. Schon
+                  während der Ausbildung interessierte ich mich neben der Gestaltung auch immer mehr für die technische
+                  Umsetzung.<br />
+                </p>
+              </div>
+              <div class="column is-4">
+                <div class="image image--dropshadow">
+                  <img src="/src/assets/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
+                    alt="Portrait Alexander Drießen">
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-8">
+                <h3 class="title is-size-5">
+
+                </h3>
+                <p class="is-size-5">
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    </div>
+    <div class="socialnav-wrapper">
+      <div class="socialnav">
+        <ol>
+          <li>
+            <a href="https://www.instagram.com/alex.driessen/" target="_blank" title="Instagram-Link Alexander Drießen">
+              <i class="feather-36" data-feather="instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/alex-kave" target="_blank" title="Github-Link Alexander Drießen">
+              <i class="feather-36" data-feather="github"></i>
+            </a>
+          </li>
+        </ol>
       </div>
     </div>
-  </section>
-  <main>
-
-  </main>
-  <footer>
-
-  </footer>
+    <script>
+      feather.replace()
+    </script>
+  </div>
 </body>
 
 </html>

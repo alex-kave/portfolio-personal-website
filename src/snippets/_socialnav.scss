@@ -1,0 +1,35 @@
+.socialnav-wrapper {
+  min-height: 100vh;
+
+  .socialnav {
+    bottom: 0;
+    position: fixed;
+    right: 10%;
+
+    ol {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      li {
+        + li {
+          margin-top: 0.5rem;
+        }
+
+        a {
+          color: $primary;
+        }
+      }
+
+      &::after {
+        background-color: $primary;
+        content: "";
+        display: block;
+        height: 250px;
+        margin-top: 0.5rem;
+        width: 1px;
+      }
+    }
+  }
+}
