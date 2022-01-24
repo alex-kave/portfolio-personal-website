@@ -1,3 +1,6 @@
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import sveltePreprocess from "./svelte.config";
+
 export default {
   css: {
     preprocessorOptions: {
@@ -6,4 +9,9 @@ export default {
       },
     },
   },
+  plugins: [
+    svelte({
+      ...sveltePreprocess,
+    }),
+  ],
 };
