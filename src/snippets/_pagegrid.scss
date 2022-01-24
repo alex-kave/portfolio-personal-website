@@ -1,13 +1,16 @@
 .page-grid {
   @include desktop {
+    align-items: start;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    grid-template-columns: 1fr 2.25rem;
   }
 
-  .page-content {
-    grid-column: 2/3;
+  main {
+    grid-column: 1/2;
   }
 
   .socialnav-wrapper {
+    grid-column: 2/3;
   }
 }
