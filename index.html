@@ -22,17 +22,17 @@
           <nav class="nav">
             <ol class="is-flex is-justify-content-flex-end is-align-items-center">
               <li class="nav__item">
-                <a href="" class="has-text-primary">
+                <a href="#uebermich" class="button is-text has-text-primary">
                   Über mich
                 </a>
               </li>
               <li class="nav__item">
-                <a href="" class="has-text-primary">
+                <a href="#erfahrung" class="button is-text has-text-primary">
                   Erfahrung
                 </a>
               </li>
               <li class="nav__item">
-                <a href="" class="button is-secondary">
+                <a href="mailto:alexander.driessen@netcologne.de" class="button is-secondary">
                   Kontakt
                 </a>
               </li>
@@ -83,15 +83,12 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="uebermich">
           <div class="container">
             <div class="columns is-vcentered is-centered">
               <div class="column is-6">
-                <h2 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">
-                  Das bin ich
-                </h2>
                 <p class="is-size-5">
-                  Hallo! Ich bin Alex, 23 Jahre alt und in der schönsten Domstadt Deutschlands zu Hause, in
+                  Ich bin Alex, 23 Jahre alt und in der schönsten Domstadt Deutschlands zu Hause, in
                   Köln.❤️<br />
                   <br />
                   Wenn ich nicht gerade code, dann...
@@ -112,63 +109,83 @@
                 </ol>
               </div>
               <div class="column is-4">
-                <div class="image image--dropshadow">
-                  <img src="/src/assets/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
-                    alt="Portrait Alexander Drießen">
-                </div>
+                <image-animation type="dropshadow"
+                  imagesrc="/src/assets/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
+                  imagealt="Alexander Drießen">
+                </image-animation>
               </div>
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="erfahrung">
           <div class="container">
             <div class="columns">
               <div class="column is-8">
                 <h3 class="title is-size-5">
-                  Zwischen Gestaltung und Technik
+                  Mein Weg von der Gestaltung zur Technik
                 </h3>
                 <p class="is-size-5">
                   Im Sommer 2018 habe ich in der Agentur Fahrenheit meine Ausbildung zum Mediengestalter in Gestaltung
                   und Technik mit digitalem Schwerpunk begonnen.<br />
                   <br />
-                  War ich zu Beginn noch ausschließlich Teil des Design-Teams, entwickelte ich im laufe der Jahre
-                  immer mehr Interesse an der Entwicklung und dem technischen Hintergrund unserer
-                  Website-Projekte. Nicht zuletzt lag das auch daran, dass ich die Jungs aus dem Frontend und ihren
-                  Job
-                  von Anfang an einfach cool fand.😎<br />
-                  <br />
-                  Nach unendlichen Warums und Wiesos, mal mehr und mal weniger spannenden Udemy Kursen und viel Trial
-                  and Error habe ich vorallem im letzten Ausbildungsjahr sehr viel im Bereich des Web Development
-                  gelernt.
+                  Im Herzen von Ehrenfeld gestaltete ich Logos, Animationen, UI-Elemente und Module für Websites, aber
+                  auch das ein oder andere Printprodukt.<br />
+                  Vor allem im letzten Jahr meiner Ausbildung habe ich mich jedoch verstärkt der Entwicklung und dem
+                  Programmieren zugewandt. Für mich der logische Schritt: Mit dem Verständnis für Gestaltung und dem
+                  Handwerk des Designs in die Entwicklung zu gehen.
                 </p>
               </div>
             </div>
             <div class="columns is-vcentered">
               <div class="column is-4">
                 <div class="tech-logos">
-                  <div class="tech-logos__vite">
-                    <img src="/src/assets/images/vite-logo.png" alt="Vite">
-                  </div>
-                  <div class="tech-logos__kirby">
-                    <img src="/src/assets/images/Kirby-cms-logo.png" alt="Kirby CMS">
-                  </div>
-                  <div class="tech-logos__svelte">
-                    <img src="/src/assets/images/svelte-logo.png" alt="Svelte">
-                  </div>
-                  <div class="tech-logos__vue">
-                    <img src="/src/assets/images/vue-logo.png" alt="Vue">
-                  </div>
+                  <image-animation imagesrc="/src/assets/images/vite-logo.png" imagealt="Vite" type="tech-logo"
+                    data-framework="vite">
+                  </image-animation>
+                  <image-animation imagesrc="/src/assets/images/Kirby-cms-logo.png" imagealt="Kirby CMS"
+                    type="tech-logo" data-framework="kirby">
+                  </image-animation>
+                  <image-animation imagesrc="/src/assets/images/svelte-logo.png" imagealt="Svelte" type="tech-logo"
+                    data-framework="svelte">
+                  </image-animation>
+                  <image-animation imagesrc="/src/assets/images/vue-logo.png" imagealt="Vue" type="tech-logo"
+                    data-framework="vue">
+                  </image-animation>
                 </div>
               </div>
               <div class="column is-8">
                 <h3 class="title is-size-5 mt-6">
-                  Technik, die begeistert.
+                  Das habe ich bisher kennengelernt
                 </h3>
                 <p class="is-size-5">
-                  Als Teil des Entwicklungsteams bin ich vorallem mit dem CMS Kirby, PHP und dem JavaScript-Framework
-                  Svelte in Kontakt gekommen. Aktuell lerne ich VUE, um damit eine App zu bauen, die das Zusammenleben
+                  Mit der Übernahme nach meiner Ausbildung wurde ich Teil des Entwicklungsteams. Hier bin ich vorallem
+                  mit dem Content Management System Kirby, PHP und dem JavaScript-Framework Svelte in Kontakt
+                  gekommen. Die Teamstärke von vier Entwicklern ermöglichte eine agile und dynamische Arbeitsweise, die
+                  mir trotz der alltäglichen Todos und Aufgaben eine fruchtbare Umgebung zum lernen bot.<br />
+                  <br />
+                  Aktuell beschäftige ich mich mit Vue.js, um damit eine App zu bauen, die das Zusammenleben
                   von mir und meiner Familie organisieren und erleichtern soll.
                 </p>
+                <a href="" class="button is-secondary mt-4">Zum App-Repository</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section is-medium">
+          <div class="container">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <h2 class="title is-size-3-desktop">
+                  Lass uns in Kontakt treten!
+                </h2>
+                <p class="is-size-3-desktop">
+                  Hier irgend einen Aufruf zur Kontaktaufnahme. Nicht zu sehr nach Freelancer klingen lassen, da
+                  Bewerbung auf Stelle primär!
+                </p>
+                <a href="mailto:alexander.driessen@netcologne.de" class="button is-secondary mt-4">
+                  <i data-feather="mail" class="mr-4"></i>
+                  Schreib mir eine Mail
+                </a>
               </div>
             </div>
           </div>

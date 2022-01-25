@@ -12,6 +12,9 @@ export default {
   plugins: [
     svelte({
       ...sveltePreprocess,
+      compilerOptions: {
+        customElement: true,
+      },
     }),
   ],
 };

@@ -10,3 +10,8 @@ import feather from "feather-icons";
 document.addEventListener("DOMContentLoaded", () => {
   feather.replace();
 });
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+import "./components/shared/ImageAnimation.svelte";
