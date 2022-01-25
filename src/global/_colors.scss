@@ -2,12 +2,16 @@ $primary: #1a1a1a;
 $primary-invert: $white;
 $secondary: #ffe576;
 $secondary-invert: $primary;
-$grey-light: #f1f1f1;
-$grey-lighter: #f9f9f9;
+$tertiary: #e5ecff;
+$tertiary-invert: $primary;
 $custom-colors: (
   "secondary": (
     $secondary,
     $secondary-invert,
+  ),
+  "tertiary": (
+    $tertiary,
+    $tertiary-invert,
   ),
 );
 $text: $primary;

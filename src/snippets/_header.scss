@@ -22,6 +22,7 @@ header.header {
 
       a:not(.button) {
         &:hover {
+          text-decoration: underline;
         }
       }
 

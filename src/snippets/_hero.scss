@@ -3,12 +3,12 @@
   z-index: 1;
 
   &-background {
-    background-image: url("/src/assets/svg/alexander-driessen-logo-monogram.svg");
-    background-repeat: no-repeat;
+    background-color: $tertiary;
     display: none;
     height: 100%;
     left: 0;
-    opacity: 0.1;
+    mask-image: url("/src/assets/svg/alexander-driessen-logo-monogram.svg");
+    mask-repeat: no-repeat;
     position: absolute;
     top: 0;
     width: 100%;
