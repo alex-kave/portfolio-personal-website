@@ -9,22 +9,22 @@
     max-height: 150px;
   }
 
-  &__vite {
+  [data-framework="vite"] {
     grid-column: 2;
     grid-row: 1;
   }
 
-  &__kirby {
+  [data-framework="kirby"] {
     grid-column: 1;
     grid-row: 2;
   }
 
-  &__svelte {
+  [data-framework="svelte"] {
     grid-column: 3;
     grid-row: 2;
   }
 
-  &__vue {
+  [data-framework="vue"] {
     grid-column: 2;
     grid-row: 3;
   }
