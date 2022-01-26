@@ -34,12 +34,13 @@ const initAnimation = () =>{
     })
   }
   if(type === 'tech-logo'){
-    gsap.set(imageElement, {opacity: 0, scale: 0, x: 100});
+    gsap.set(imageElement, {opacity: 0, scale: 0, x: 100, rotate: 30});
     tl.to(imageElement,{
       duration: 1,
       scale: 1.2,
       opacity: 1,
       x: 0,
+      rotate: 0,
     })
   }
 }
@@ -66,7 +67,7 @@ onMount(() => {
 
   &--dropshadow {
     @include mobile {
-      transform: translateX(-0.5rem);
+      transform: translateX(0.5rem);
     }
 
     &::before {

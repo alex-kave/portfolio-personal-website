@@ -15,3 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
 # Components
 --------------------------------------------------------------*/
 import "./components/shared/ImageAnimation.svelte";
+import "./components/LogoAnimation/LogoAnimation.svelte";
