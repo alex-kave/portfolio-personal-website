@@ -15,7 +15,7 @@
       <div class="columns is-vcentered">
         <div class="column has-text-centered-touch">
           <a href="index.html">
-            <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg" alt="Logo Alexander Drießen" width="100">
+            <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg" alt="Alexander Drießen Monogram">
           </a>
         </div>
         <div class="column is-8 is-hidden-touch has-text-right">
@@ -32,8 +32,8 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a href="mailto:alexander.driessen@netcologne.de" class="button is-secondary">
-                  Kontakt
+                <a href="tel:015257803120" class="button is-text is-size-4">
+                  +49 1525 7803120
                 </a>
               </li>
             </ol>
@@ -44,39 +44,40 @@
     <div class="page-grid">
       <main>
         <section class="hero">
-          <div class="hero-background"></div>
-          <div class="hero-wrap">
-            <div class="columns is-vcentered">
-              <div class="column is-6">
-                <div class="hero-wrap__portrait">
-                  <div class="hero-wrap__portrait__img">
-                    <img src="/src/assets/images/alexander-driessen-portrait-freisteller-schwarz-weiss.png"
-                      alt="Portrait Alexander Drießen">
-                  </div>
-                  <div class="hero-wrap__portrait__info">
-                    <p class="has-text-weight-bold">
-                      Alexander Drießen
-                    </p>
-                    <p>
-                      🎂 17. Februar 1999
-                    </p>
-                    <p>
-                      📍 Köln, Deutschland
-                    </p>
-                  </div>
-                </div>
+          <div class="hero-background">
+            <logo-animation animationdata="/src/assets/lottie/logo-alexander-driessen-lottie.json">
+            </logo-animation>
+          </div>
+          <div class="container">
+            <div class="hero-wrap">
+              <div class="hero-wrap__cnt">
+                <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+                  Hallo, ich bin <mark>Alex!</mark>
+                </h1>
+                <p class="subtitle is-size-3-desktop is-size-4-tablet is-size-5-mobile">Front-End-Entwickler und
+                  Mediengestalter aus
+                  Köln.
+                </p>
+                <p class="is-size-5-tablet is-size-6">Ich entwickle und gestalte digitale Erlebnisse. Aktuell entdecke
+                  ich
+                  <a href="https://vuejs.org/" target="_blank" title="Vue JS Framework">Vue.js</a> für mich.
+                </p>
               </div>
-              <div class="column is-6">
-                <div class="hero-wrap__cnt">
-                  <h1 class="title is-size-1-desktop is-size-3-tablet is-size-4-mobile">
-                    Hallo, ich bin <mark>Alex!</mark>
-                  </h1>
-                  <p class="subtitle is-size-3-desktop is-size-5-touch">Front-End-Entwickler und Mediengestalter aus
-                    Köln.
+
+              <div class="hero-wrap__portrait">
+                <div class="hero-wrap__portrait__img">
+                  <img src="/src/assets/images/alexander-driessen-portrait-freisteller-schwarz-weiss.png"
+                    alt="Portrait Alexander Drießen">
+                </div>
+                <div class="hero-wrap__portrait__info">
+                  <p class="has-text-weight-bold">
+                    Alexander Drießen
                   </p>
-                  <p class="is-size-5">Ich entwickle und gestalte digitale Erlebnisse. Aktuell entdecke
-                    ich
-                    <a href="https://vuejs.org/" target="_blank" title="Vue JS Framework">Vue.js</a> für mich.
+                  <p>
+                    🎂 17. Februar 1999
+                  </p>
+                  <p>
+                    📍 Köln, Deutschland
                   </p>
                 </div>
               </div>
@@ -87,28 +88,31 @@
           <div class="container">
             <div class="columns is-vcentered is-centered">
               <div class="column is-6">
-                <p class="is-size-5">
+                <p class="is-size-5-tablet is-size-6">
                   Ich bin Alex, 23 Jahre alt und in der schönsten Domstadt Deutschlands zu Hause, in
                   Köln.❤️<br />
                   <br />
                   Wenn ich nicht gerade code, dann...
                 </p>
                 <ol class="list list--check">
-                  <li class="is-size-5">
+                  <li class="is-size-5-tablet is-size-6">
                     <i data-feather="check"></i>
                     ... fotografiere ich analog.
                   </li>
-                  <li class="is-size-5">
+                  <li class="is-size-5-tablet is-size-6">
                     <i data-feather="check"></i>
                     ... spiele ich Klavier.
                   </li>
-                  <li class="is-size-5">
+                  <li class="is-size-5-tablet is-size-6">
                     <i data-feather="check"></i>
                     ... schraube ich an alten Fahrrädern rum.
                   </li>
                 </ol>
+                <a href="/creativeplayground.html" alt="Mein Creative Playground" class="button is-text mt-4">
+                  Hier gibt's mehr davon zu sehen
+                </a>
               </div>
-              <div class="column is-4">
+              <div class="column is-6 is-4-desktop">
                 <image-animation type="dropshadow"
                   imagesrc="/src/assets/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
                   imagealt="Alexander Drießen">
@@ -121,18 +125,21 @@
           <div class="container">
             <div class="columns">
               <div class="column is-8">
-                <h3 class="title is-size-5">
-                  Mein Weg von der Gestaltung zur Technik
+                <h3 class="title is-size-4-tablet is-size-5">
+                  Von der Gestaltung in die Entwicklung
                 </h3>
-                <p class="is-size-5">
-                  Im Sommer 2018 habe ich in der Agentur Fahrenheit meine Ausbildung zum Mediengestalter in Gestaltung
-                  und Technik mit digitalem Schwerpunk begonnen.<br />
+                <p class="is-size-5-tablet is-size-6">
+                  Im Sommer 2018 fange ich meine Ausbildung zum Mediengestalter an. Mitten in Köln Ehrenfeld, als Teil
+                  des Teams der Agentur Fahrenheit, entwickel ich Logos, animiere und retuschiere was das Zeug hält,
+                  gestalte interaktive Website-Module und arbeite mich für ein Projekt auch in die 3D-Welt von Blender
+                  ein. Kurz – Ich habe gelernt, was es heißt, zu gestalten! Im Laufe der Ausbildung entwickle ich immer
+                  mehr Lust und Interesse an der Front-End-Programmierung. Das liegt nicht zuletzt auch daran, dass ich
+                  so cool wie die Front-End-Jungs sein will. 😎<br />
                   <br />
-                  Im Herzen von Ehrenfeld gestaltete ich Logos, Animationen, UI-Elemente und Module für Websites, aber
-                  auch das ein oder andere Printprodukt.<br />
-                  Vor allem im letzten Jahr meiner Ausbildung habe ich mich jedoch verstärkt der Entwicklung und dem
-                  Programmieren zugewandt. Für mich der logische Schritt: Mit dem Verständnis für Gestaltung und dem
-                  Handwerk des Designs in die Entwicklung zu gehen.
+                  Vor allem steht aber auch die Abschlussprüfung mit einer Website-Entwicklung vor der Tür. Also heißt
+                  es Gas geben: Nach etlichen Wiesos und Warums, mal mehr und mal weniger spannenden Udemy Kursen und
+                  viel Try and Error schaffe ich mir im Sommer 2021 eine Menge Know-How im Bereich Web-Development
+                  drauf.
                 </p>
               </div>
             </div>
@@ -154,19 +161,30 @@
                 </div>
               </div>
               <div class="column is-8">
-                <h3 class="title is-size-5 mt-6">
-                  Das habe ich bisher kennengelernt
+                <h3 class="title is-size-4-tablet is-size-5 mt-6">
+                  Ich werde Teil des Entwicklungsteams
                 </h3>
-                <p class="is-size-5">
-                  Mit der Übernahme nach meiner Ausbildung wurde ich Teil des Entwicklungsteams. Hier bin ich vorallem
-                  mit dem Content Management System Kirby, PHP und dem JavaScript-Framework Svelte in Kontakt
-                  gekommen. Die Teamstärke von vier Entwicklern ermöglichte eine agile und dynamische Arbeitsweise, die
-                  mir trotz der alltäglichen Todos und Aufgaben eine fruchtbare Umgebung zum lernen bot.<br />
+                <p class="is-size-5-tablet is-size-6">
+                  Zweiter Teil 2021, ich bin tatsächlich Teil des Entwicklungsteams. 🎉 In einem vierköpfigen Team
+                  entwickeln wir interaktive Module, scroll-basierte Animationen und was eben alles zu einer Website
+                  gehört. Unser tägliches Brot an Technik ist dabei unter anderem das Content Management System Kirby,
+                  PHP und Svelte, alles gebuildet und zusammengepackt mit Vite.<br />
                   <br />
-                  Aktuell beschäftige ich mich mit Vue.js, um damit eine App zu bauen, die das Zusammenleben
-                  von mir und meiner Familie organisieren und erleichtern soll.
+                  Aktuell entdecke ich für mich noch Vue.js, womit ich eine App baue, die das Zusammenleben von mir und
+                  meiner Familie in einem Mehrfamilienhaus organisieren und vereinfachen wird.
                 </p>
-                <a href="" class="button is-secondary mt-4">Zum App-Repository</a>
+                <a href="" class="button is-secondary mt-4">Zu meiner Vue-App</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <div class="mockup">
+
+                </div>
               </div>
             </div>
           </div>
@@ -175,16 +193,19 @@
           <div class="container">
             <div class="columns">
               <div class="column has-text-centered">
-                <h2 class="title is-size-3-desktop">
+                <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile">
                   Lass uns in Kontakt treten!
                 </h2>
                 <p class="is-size-3-desktop">
                   Hier irgend einen Aufruf zur Kontaktaufnahme. Nicht zu sehr nach Freelancer klingen lassen, da
                   Bewerbung auf Stelle primär!
                 </p>
-                <a href="mailto:alexander.driessen@netcologne.de" class="button is-secondary mt-4">
-                  <i data-feather="mail" class="mr-4"></i>
-                  Schreib mir eine Mail
+                <a href="mailto:alexander.driessen@netcologne.de"
+                  class="button is-text mt-6 is-size-4 is-hidden-mobile">
+                  alexander.driessen@netcologne.de
+                </a>
+                <a href="mailto:alexander.driessen@netcologne.de" class="is-hidden-tablet">
+                  <i data-feather="mail" class="is-size-2 has-text-primary"></i>
                 </a>
               </div>
             </div>
