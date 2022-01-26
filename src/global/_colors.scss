@@ -3,6 +3,7 @@ $primary-invert: $white;
 $secondary: #ffe576;
 $secondary-invert: $primary;
 $tertiary: #e5ecff;
+$tertiary-dark: #8a9ac4;
 $tertiary-invert: $primary;
 $custom-colors: (
   "secondary": (
@@ -11,6 +12,10 @@ $custom-colors: (
   ),
   "tertiary": (
     $tertiary,
+    $tertiary-invert,
+  ),
+  "tertiary-dark": (
+    $tertiary-dark,
     $tertiary-invert,
   ),
 );

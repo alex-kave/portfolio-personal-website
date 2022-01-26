@@ -17,6 +17,7 @@ header.header {
 
   .nav {
     &__item {
+      font-family: $family-secondary;
       font-weight: bold;
       list-style: none;
 

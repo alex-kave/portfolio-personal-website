@@ -17,6 +17,7 @@ mark {
 }
 
 a:not(.button) {
-  color: $link;
+  color: $tertiary-dark;
+  font-weight: bold;
   text-decoration: underline;
 }

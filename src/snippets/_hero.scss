@@ -3,38 +3,52 @@
   z-index: 1;
 
   &-background {
-    background-color: $tertiary;
-    display: none;
-    height: 100%;
-    left: 0;
-    mask-image: url("/src/assets/svg/alexander-driessen-logo-monogram.svg");
-    mask-repeat: no-repeat;
+    left: 50%;
     position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    top: 20%;
+    transform: translateX(-50%);
 
     @include desktop {
+      left: 0;
+      top: 0;
+      transform: translateX(0);
+    }
+
+    logo-animation {
       display: block;
+      width: 380px;
+
+      @include tablet {
+        width: 600px;
+      }
+
+      @include desktop {
+        width: 1000px;
+      }
     }
   }
 
   &-wrap {
     align-items: center;
     display: flex;
-    flex-direction: column-reverse;
-    padding: 2rem 2rem 2rem 0;
+    flex-direction: column;
+    padding: 2rem;
     position: relative;
     z-index: 2;
 
     @include desktop {
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
 
     &__portrait {
       align-items: center;
       display: flex;
       flex-direction: column;
+      width: 100%;
+
+      @include desktop {
+        width: 50%;
+      }
 
       &__img {
         display: flex;
