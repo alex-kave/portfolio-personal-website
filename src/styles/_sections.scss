@@ -10,9 +10,14 @@
     z-index: 2;
   }
 
-  &--half-up {
-    @include desktop {
-      transform: translateY(-10%);
+  &--title-sticky {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    h2 {
+      font-size: 14rem;
     }
   }
 
