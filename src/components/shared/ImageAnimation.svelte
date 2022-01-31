@@ -52,17 +52,25 @@ onMount(() => {
 </script>
 <svelte:options tag="image-animation" />
 <div class="image" class:image--tech-logos={type ==='tech-logo'} class:image--dropshadow={type === 'dropshadow'} bind:this={imageWrap}>
+  <figure>
     <img src={imagesrc} alt={imagealt} bind:this={imageElement}/>
+    <figcaption></figcaption>
+  </figure>
 </div>
 
 <style lang="scss">
 .image {
   position: relative;
 
-  img {
+  figure{
     width: 100%;
-    position: relative;
-    z-index: 2;
+    display: block;
+    img {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
   }
 
   &--dropshadow {
@@ -70,17 +78,23 @@ onMount(() => {
       transform: translateX(0.5rem);
     }
 
-    &::before {
-      background-color: $secondary;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
+    figure{
+      margin: 0;
+      position: relative;
       width: 100%;
-      z-index: 1;
+      &::before {
+        background-color: $secondary;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
     }
+
   }
 }
 
