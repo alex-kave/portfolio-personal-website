@@ -14,5 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+//shared
 import "./components/shared/ImageAnimation.svelte";
+import "./components/shared/VideoPlay.svelte";
+
+//others
 import "./components/LogoAnimation/LogoAnimation.svelte";
+import "./components/PinnedSection/PinnedSection.svelte";
