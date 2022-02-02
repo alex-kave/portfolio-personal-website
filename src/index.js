@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
 //shared
 import "./components/shared/ImageAnimation.svelte";
 import "./components/shared/VideoPlay.svelte";
+import "./components/shared/FeatherIcon.svelte";
 
 //others
 import "./components/LogoAnimation/LogoAnimation.svelte";
 import "./components/PinnedSection/PinnedSection.svelte";
+import "./components/BackToTop/BackToTop.svelte";
