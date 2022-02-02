@@ -11,36 +11,7 @@
 
 <body>
   <div class="container">
-    <header class="header">
-      <div class="columns is-vcentered">
-        <div class="column has-text-centered-touch">
-          <a href="index.html">
-            <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg" alt="Alexander Drießen Monogram">
-          </a>
-        </div>
-        <div class="column is-8 is-hidden-touch has-text-right">
-          <nav class="nav">
-            <ol class="is-flex is-justify-content-flex-end is-align-items-center">
-              <li class="nav__item">
-                <a href="#uebermich" class="button is-text has-text-primary">
-                  Über mich
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#erfahrung" class="button is-text has-text-primary">
-                  Erfahrung
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="tel:015257803120" class="button is-text is-size-4">
-                  +49 1525 7803120
-                </a>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </header>
+    {{>header}}
     <div class="page-grid">
       <main>
         <section class="hero">
@@ -124,7 +95,7 @@
         <section class="section" id="erfahrung">
           <div class="container">
             <div class="columns">
-              <div class="column is-8">
+              <div class="column is-8-desktop">
                 <h3 class="title is-size-4-tablet is-size-5">
                   Von der Gestaltung in die Entwicklung
                 </h3>
@@ -143,8 +114,23 @@
                 </p>
               </div>
             </div>
-            <div class="columns is-vcentered">
-              <div class="column is-4">
+            <div class="columns columns--reversed is-vcentered">
+              <div class="column is-8-desktop">
+                <h3 class="title is-size-4-tablet is-size-5 mt-6">
+                  Ich werde Teil des Entwicklungsteams
+                </h3>
+                <p class="is-size-5-tablet is-size-6">
+                  Zweiter Teil 2021, ich bin tatsächlich Teil des Entwicklungsteams. 🎉 In einem vierköpfigen Team
+                  entwickeln wir interaktive Module, scroll-basierte Animationen und was eben alles zu einer Website
+                  gehört. Unser tägliches Brot an Technik ist dabei unter anderem das Content Management System Kirby,
+                  PHP und Svelte, alles gebuildet und zusammengepackt mit Vite.<br />
+                  <br />
+                  Aktuell entdecke ich für mich noch Vue.js, womit ich eine App baue, die das Zusammenleben von mir und
+                  meiner Familie in einem Mehrfamilienhaus organisieren und vereinfachen wird.
+                </p>
+                <a href="" class="button is-secondary mt-4">Zu meiner Vue-App</a>
+              </div>
+              <div class="column is-4-desktop">
                 <div class="tech-logos">
                   <image-animation imagesrc="/src/assets/images/vite-logo.png" imagealt="Vite" type="tech-logo"
                     data-framework="vite">
@@ -160,21 +146,6 @@
                   </image-animation>
                 </div>
               </div>
-              <div class="column is-8">
-                <h3 class="title is-size-4-tablet is-size-5 mt-6">
-                  Ich werde Teil des Entwicklungsteams
-                </h3>
-                <p class="is-size-5-tablet is-size-6">
-                  Zweiter Teil 2021, ich bin tatsächlich Teil des Entwicklungsteams. 🎉 In einem vierköpfigen Team
-                  entwickeln wir interaktive Module, scroll-basierte Animationen und was eben alles zu einer Website
-                  gehört. Unser tägliches Brot an Technik ist dabei unter anderem das Content Management System Kirby,
-                  PHP und Svelte, alles gebuildet und zusammengepackt mit Vite.<br />
-                  <br />
-                  Aktuell entdecke ich für mich noch Vue.js, womit ich eine App baue, die das Zusammenleben von mir und
-                  meiner Familie in einem Mehrfamilienhaus organisieren und vereinfachen wird.
-                </p>
-                <a href="" class="button is-secondary mt-4">Zu meiner Vue-App</a>
-              </div>
             </div>
           </div>
         </section>
@@ -183,61 +154,21 @@
             <div class="columns">
               <div class="column has-text-centered">
                 <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile">
-                  Lass uns in Kontakt treten!
+                  Let's get in touch!
                 </h2>
-                <p class="is-size-3-desktop">
-                  Hier irgend einen Aufruf zur Kontaktaufnahme. Nicht zu sehr nach Freelancer klingen lassen, da
-                  Bewerbung auf Stelle primär!
-                </p>
                 <a href="mailto:alexander.driessen@netcologne.de"
-                  class="button is-text mt-6 is-size-4 is-hidden-mobile">
+                  class="is-block is-size-3-desktop is-size-5-tablet is-size-6 mt-6-desktop">
                   alexander.driessen@netcologne.de
-                </a>
-                <a href="mailto:alexander.driessen@netcologne.de" class="is-hidden-tablet">
-                  <i data-feather="mail" class="is-size-2 has-text-primary"></i>
                 </a>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <div class="socialnav-wrapper is-hidden-touch">
-        <div class="socialnav">
-          <ol>
-            <li>
-              <a href="https://www.instagram.com/alex.driessen/" target="_blank"
-                title="Instagram-Link Alexander Drießen">
-                <i class="feather-36" data-feather="instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/alex-kave" target="_blank" title="Github-Link Alexander Drießen">
-                <i class="feather-36" data-feather="github"></i>
-              </a>
-            </li>
-          </ol>
-        </div>
-      </div>
+      {{>socialnav}}
     </div>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="columns">
-        <div class="column has-text-centered">
-          <a href="index.html">
-            <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg" alt="Logo Alexander Drießen" width="100">
-          </a>
-          <span class="is-block mt-4 has-text-weight-bold">Alexander Drießen</span>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column has-text-centered">
-          <a href="">Impresum</a>|
-          <a href="">Datenschutz</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {{>footer}}
   <script type="module" src="/src/index.js"></script>
 </body>
 

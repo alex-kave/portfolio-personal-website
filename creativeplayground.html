@@ -11,227 +11,247 @@
 
 <body>
     <div class="container">
-        <header class="header">
-            <div class="columns is-vcentered">
-                <div class="column has-text-centered-touch">
-                    <a href="index.html">
-                        <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg"
-                            alt="Alexander Drießen Monogram">
-                    </a>
-                </div>
-                <div class="column is-8 is-hidden-touch has-text-right">
-                    <nav class="nav">
-                        <a href="tel:015257803120" class="button is-text is-size-4">
-                            +49 1525 7803120
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </div>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <h1 class="title is-size-1-desktop">Was ich sonst so treibe</h1>
-                    <p class="is-size-4-tablet is-size-5">
-                        Wie gesagt, wenn ich gerade nicht code, dann mach ich eine ganze Menge anderes Zeug.<br />
-                        Ich bastel Objekte in Blender, mache Musik, fotografiere und schraube an Fahrrädern.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <pinned-section headline="AR/Blender" animduration="2300"></pinned-section>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="image-grid image-grid--ar">
-                        <div class="ar__cnt">
-                            <h3 class="title is-size-4">
-                                Digital einen Maibaum stellen, geht!
-                            </h3>
-                            <p class="is-size-5-tablet is-size-6">
-                                Der 1. Mai steht kurz bevor und mir fällt auf: Dieses Jahr trennen mich und meine
-                                Freundin ein paar Kilometer. Also muss eine andere Lösung her! <br />
-                                💡 Warum nicht den Baum als AR-Model erstellen und ihr per Link zu Verfügung stellen? So
-                                hat sie den Baum immer bei
-                                sich und kann ihn durch ihre Handy-Kamera neben ihr aufstellen!<br />
-                                <br />
-                                Beim Stuhl fehlt offensichtlich noch das richtige Material, konnte mich einfach nicht
-                                entscheiden. Aber erstaunlich, wie fest und ruckelfrei auch das Kühlschrank-ähnliche
-                                Ding in meiner Küche stehen bleibt und sich so problemlos umlaufen lässt.
-                            </p>
-                            <a href="https://web-ar.space/view/alex-driessen/jenna-maibaum"
-                                class="button is-secondary mt-4" target="_blank">AR-Maibaum anschauen</a>
-                        </div>
-                        <div class="ar__tree">
-                            <video-play videosrc="/src/assets/videos/jenna-maibaum-ar-model.mp4"
-                                videofigcaption="Video von Maibaum als AR Model"></video-play>
-                        </div>
-                        <div class="ar__machine">
-                            <figure>
-                                <img src="/src/assets/images/alexander-driessen-machine-ar-model.jpg"
-                                    alt="Augmented Reality Model">
-                                <figcaption>AR Maschine durch meine Iphone-Kamera</figcaption>
-                            </figure>
-                        </div>
-                        <video-play videosrc="/src/assets/videos/alexander-driessen-machine-ar-model.mp4"
-                            videofigcaption="AR Model in meiner Küche"></video-play>
-                        <div class="ar__chair">
-                            <figure>
-                                <img src="/src/assets/images/alexander-driessen-ar-stuhl-model.PNG"
-                                    alt="Augmented Reality Stuhl Modell">
-                                <figcaption>AR Model eines Stuhls</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <pinned-section headline="Musik" animduration="800"></pinned-section>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="image-grid image-grid--music">
-                        <div class="music__cnt">
-                            <h3 class="title is-size-4">
-                                Brafuß am Klavier
-                            </h3>
-                            <p class="is-size-5-tablet is-size-6">
-                                Ich spiele seit meinem sechsten Lebensjahr Klavier. Mit Zwölf oder Dreizehn habe ich
-                                allerdings die Stunden aufgegeben, seit dem spiele ich was mir so in den Sinn kommt,
-                                alles nach Gehör. 🎶 <br />
-                                <br />
-                                In meinem „Repertoire“ findet sich so neben AnnenMayKantereit
-                                auch der ein oder andere Mac Miller Song oder eben was gerade so im Radio läuft.<br />
-                            </p>
-                        </div>
-                        <div class="music__piano">
-                            <video-play videosrc="/src/assets/videos/alexander-driessen-klavier-musik-short.mp4"
-                                videotype="video/mp4" videofigcaption="Ich am Klavier"></video-play>
-                        </div>
-                        <div class="music__soundcloud">
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/693731581&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            <div
-                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                                <a href="https://soundcloud.com/b3dtimestories" title="bedtimestories" target="_blank"
-                                    style="color: #cccccc; text-decoration: none;">bedtimestories</a> · <a
-                                    href="https://soundcloud.com/b3dtimestories/missed-calls" title="missed calls"
-                                    target="_blank" style="color: #cccccc; text-decoration: none;">missed calls</a>
+        {{>header}}
+        <div class="page-grid">
+            <main>
+                <section class="section">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <h1 class="title is-size-1-desktop">Was ich sonst so treibe</h1>
+                                <p class="is-size-4-tablet is-size-5">
+                                    Wie gesagt, wenn ich gerade nicht code, dann mach ich eine ganze Menge anderes
+                                    Zeug.<br />
+                                    Ich bastel Objekte in Blender, mache Musik, fotografiere und schraube an Fahrrädern.
+                                </p>
                             </div>
-                            <p class="is-size-5-tablet is-size-6 mt-6">
-                                Außerdem produziere ich mit zwei Freunden Beats. Unter dem Namen
-                                <a href="https://www.instagram.com/b3dtimestories/" target="_blank">bedtimestories</a>
-                                veröffentlichen und promoten wir unsere Musik
-                                mittlerweile
-                                hauptsächlich auf Instagram, BeatStars und Soundcloud.
-                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <pinned-section headline="Fotografie" animduration="2000"></pinned-section>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="image-grid image-grid--photography">
-                        <div class="photography__cnt">
-                            <h3 class="title is-size-4">
-                                Analoge Fotografie
-                            </h3>
-                            <p class="is-size-5-tablet is-size-6">
-                                Die analoge Kamera meines Vaters habe ich mir eines Tages aus dem Regal
-                                genommen, reparieren lassen und wieder in Betrieb genommen. Seit dem schlepp ich sie
-                                immer mal wieder mit. Neben snap shots von Freunden und Familie bin ich auf der Suche
-                                nach interessanten Formen, Lichteinfall und Bildkompositionen.<br />
-                                <br />
-                                Auf <a href="https://vsco.co/alexanderdriessen/gallery" target="_blank">VISCO</a> teile
-                                ich die Bilder, die ich mit meinem Iphone
-                                mache. Schau doch mal vorbei!
-                            </p>
-                        </div>
-                        <div class="photography__greenhouse">
-                            <img src="/src/assets/images/alexander-driessen-gruen-haus-pflanzen.JPG" alt="">
-                        </div>
-                        <div class="photography__bikes">
-                            <img src="/src/assets/images/alexander-driessen-fahrraeder-schwarz-weiß.JPG" alt="">
-                        </div>
-                        <div class="photography__tree">
-                            <img src="/src/assets/images/alexander-driessen-baum-haus-sonne.JPG" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <pinned-section headline="Fahrräder" animduration="2000"></pinned-section>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="image-grid image-grid--bikes">
-                        <div class="bikes__cnt">
-                            <h3 class="title is-size-4">
-                                Meine kleine Fahrradsammlung
-                            </h3>
-                            <p class="is-size-5-tablet is-size-6">
-                                Ich fahre viel und gerne Fahrrad. Damit einher geht gezwungener Maßen auch das Erlernen
-                                von Schrauberfähigkeiten.<br />
-                                <br />
-                                Vom einfachen Schlauchwechsel bis hin zu komplettem Zerlegen und Neuaufbauen meiner
-                                alten Rennräder habe ich mir so in den Vergangenen Jahren einiges an Skills drauf
-                                geschafft.<br />
-                                <br />
-                                Wer hier mein Treiben verfolgen will, kann mir unter <a
-                                    herf="https://www.instagram.com/meine.drahtesel/"
-                                    target="_blank">@meine.drahtesel</a> auf Instagram
-                                folgen.
-                            </p>
-                        </div>
-                        <div class="bikes__red">
-                            <img src="/src/assets/images/alexander-driessen-hercules-rennrad-fahrraeder.jpg"
-                                alt="Rotes Vintage Hercules Rennrad">
-                        </div>
-                        <div class="bikes__white">
-                            <img src="/src/assets/images/alexander-driessen-trek-rennrad-fahrraeder.jpg"
-                                alt="Weißes Trek Rennrad">
-                        </div>
-                        <div class="bikes__gold">
-                            <img src="/src/assets/images/alexander-driessen-gudereit-rennrad-fahrraeder.jpg"
-                                alt="Goldenes Vintage Gudereit Rennrad">
+                </section>
+                <pinned-section headline="AR/Blender" animduration="2300"></pinned-section>
+                <section class="section">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="image-grid image-grid--ar">
+                                    <div class="ar__cnt">
+                                        <h3 class="title is-size-4">
+                                            Digital einen Maibaum stellen, geht!
+                                        </h3>
+                                        <p class="is-size-5-tablet is-size-6">
+                                            Der 1. Mai steht kurz bevor und mir fällt auf: Dieses Jahr trennen mich und
+                                            meine
+                                            Freundin ein paar Kilometer. Also muss eine andere Lösung her! <br />
+                                            💡 Warum nicht den Baum als AR-Model erstellen und ihr per Link zu Verfügung
+                                            stellen? So
+                                            hat sie den Baum immer bei
+                                            sich und kann ihn durch ihre Handy-Kamera neben ihr aufstellen!<br />
+                                            <br />
+                                            Beim Stuhl fehlt offensichtlich noch das richtige Material, konnte mich
+                                            einfach
+                                            nicht
+                                            entscheiden. Aber erstaunlich, wie fest und ruckelfrei auch das
+                                            Kühlschrank-ähnliche
+                                            Ding in meiner Küche stehen bleibt und sich so problemlos umlaufen lässt.
+                                        </p>
+                                        <a href="https://web-ar.space/view/alex-driessen/jenna-maibaum"
+                                            class="button is-secondary mt-4" target="_blank">AR-Maibaum anschauen</a>
+                                    </div>
+                                    <div class="ar__tree">
+                                        <video-play videosrc="/src/assets/videos/jenna-maibaum-ar-model.mp4"
+                                            videotype="video/mp4" videofigcaption="Video von Maibaum als AR Model">
+                                        </video-play>
+                                    </div>
+                                    <div class="ar__machine">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-machine-ar-model.jpg"
+                                                alt="Augmented Reality Model">
+                                            <figcaption>AR Maschine durch meine Iphone-Kamera</figcaption>
+                                        </figure>
+                                    </div>
+                                    <video-play videosrc="/src/assets/videos/alexander-driessen-machine-ar-model.mp4"
+                                        videotype="video/mp4" videofigcaption="AR Model in meiner Küche"></video-play>
+                                    <div class="ar__chair">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-ar-stuhl-model.PNG"
+                                                alt="Augmented Reality Stuhl Modell">
+                                            <figcaption>AR Model eines Stuhls</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+                <pinned-section headline="Musik" animduration="800"></pinned-section>
+                <section class="section">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="image-grid image-grid--music">
+                                    <div class="music__cnt">
+                                        <h3 class="title is-size-4">
+                                            Brafuß am Klavier
+                                        </h3>
+                                        <p class="is-size-5-tablet is-size-6">
+                                            Ich spiele seit meinem sechsten Lebensjahr Klavier. Mit Zwölf oder Dreizehn
+                                            habe
+                                            ich
+                                            allerdings die Stunden aufgegeben, seit dem spiele ich was mir so in den
+                                            Sinn
+                                            kommt,
+                                            alles nach Gehör. 🎶 <br />
+                                            <br />
+                                            In meinem „Repertoire“ findet sich so neben AnnenMayKantereit
+                                            auch der ein oder andere Mac Miller Song oder eben was gerade so im Radio
+                                            läuft.<br />
+                                        </p>
+                                    </div>
+                                    <div class="music__piano">
+                                        <video-play
+                                            videosrc="/src/assets/videos/alexander-driessen-klavier-musik-short.mp4"
+                                            videotype="video/mp4" videofigcaption="Ich am Klavier"></video-play>
+                                    </div>
+                                    <div class="music__soundcloud">
+                                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                                            allow="autoplay"
+                                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/693731581&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        <div
+                                            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                            <a href="https://soundcloud.com/b3dtimestories" title="bedtimestories"
+                                                target="_blank"
+                                                style="color: #cccccc; text-decoration: none;">bedtimestories</a> · <a
+                                                href="https://soundcloud.com/b3dtimestories/missed-calls"
+                                                title="missed calls" target="_blank"
+                                                style="color: #cccccc; text-decoration: none;">missed calls</a>
+                                        </div>
+                                        <p class="is-size-5-tablet is-size-6 mt-6">
+                                            Außerdem produziere ich mit zwei Freunden Beats. Unter dem Namen
+                                            <a href="https://www.instagram.com/b3dtimestories/"
+                                                target="_blank">bedtimestories</a>
+                                            veröffentlichen und promoten wir unsere Musik
+                                            mittlerweile
+                                            hauptsächlich auf Instagram, BeatStars und Soundcloud.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <pinned-section headline="Fotografie" animduration="2000"></pinned-section>
+                <section class="section">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="image-grid image-grid--photography">
+                                    <div class="photography__cnt">
+                                        <h3 class="title is-size-4">
+                                            Analoge Fotografie
+                                        </h3>
+                                        <p class="is-size-5-tablet is-size-6">
+                                            Die analoge Kamera meines Vaters habe ich mir eines Tages aus dem Regal
+                                            genommen, reparieren lassen und wieder in Betrieb genommen. Seit dem schlepp
+                                            ich
+                                            sie
+                                            immer mal wieder mit. Neben snap shots von Freunden und Familie bin ich auf
+                                            der
+                                            Suche
+                                            nach interessanten Formen, Lichteinfall und Bildkompositionen.<br />
+                                            <br />
+                                            Auf <a href="https://vsco.co/alexanderdriessen/gallery"
+                                                target="_blank">VISCO</a> teile
+                                            ich die Bilder, die ich mit meinem Iphone
+                                            mache. Schau doch mal vorbei!
+                                        </p>
+                                    </div>
+                                    <div class="photography__greenhouse">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-gruen-haus-pflanzen.JPG"
+                                                alt="Haus mit Pflanzen an der Fassade">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="photography__bikes">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-fahrraeder-schwarz-weiß.JPG"
+                                                alt="Fahrräder auf einem Haufen">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="photography__tree">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-baum-haus-sonne.JPG"
+                                                alt="Baum auf einer Wiese">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <pinned-section headline="Fahrräder" animduration="2000"></pinned-section>
+                <section class="section">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="image-grid image-grid--bikes">
+                                    <div class="bikes__cnt">
+                                        <h3 class="title is-size-4">
+                                            Meine kleine Fahrradsammlung
+                                        </h3>
+                                        <p class="is-size-5-tablet is-size-6">
+                                            Ich fahre viel und gerne Fahrrad. Damit einher geht gezwungener Maßen auch
+                                            das
+                                            Erlernen
+                                            von Schrauberfähigkeiten.<br />
+                                            <br />
+                                            Vom einfachen Schlauchwechsel bis hin zu komplettem Zerlegen und Neuaufbauen
+                                            meiner
+                                            alten Rennräder habe ich mir so in den Vergangenen Jahren einiges an Skills
+                                            drauf
+                                            geschafft.<br />
+                                            <br />
+                                            Wer hier mein Treiben verfolgen will, kann mir unter <a
+                                                herf="https://www.instagram.com/meine.drahtesel/"
+                                                target="_blank">@meine.drahtesel</a> auf Instagram
+                                            folgen.
+                                        </p>
+                                    </div>
+                                    <div class="bikes__red">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-hercules-rennrad-fahrraeder.jpg"
+                                                alt="Rotes Vintage Hercules Rennrad">
+                                            <figcaption>Rotes Hercules Rennrad, Stahlrahmen</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="bikes__white">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-trek-rennrad-fahrraeder.jpg"
+                                                alt="Weißes Trek Rennrad">
+                                            <figcaption>Weißes Trek Rennrad, Aluminiumrahmen</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="bikes__gold">
+                                        <figure>
+                                            <img src="/src/assets/images/alexander-driessen-gudereit-rennrad-fahrraeder.jpg"
+                                                alt="Goldenes Vintage Gudereit Rennrad">
+                                            <figcaption>Goldenes Gudereit Rennrad, Stahlrahmen</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            {{>socialnav}}
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="column has-text-centered">
-                    <a href="index.html">
-                        <img src="/src/assets/svg/alexander-driessen-logo-monogram.svg" alt="Logo Alexander Drießen"
-                            width="100">
-                    </a>
-                    <span class="is-block mt-4 has-text-weight-bold">Alexander Drießen</span>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column has-text-centered">
-                    <a href="">Impresum</a>|
-                    <a href="">Datenschutz</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+    <back-to-top>
+    </back-to-top>
+    {{>footer}}
     <script type="module" src="/src/index.js"></script>
 </body>
 
