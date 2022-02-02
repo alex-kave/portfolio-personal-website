@@ -2,7 +2,7 @@
 /*--------------------------------------------------------------
 # Imports
 --------------------------------------------------------------*/
-  import { onMount, afterUpdate } from "svelte";
+  import { onMount } from "svelte";
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   gsap.registerPlugin(ScrollTrigger);
@@ -18,7 +18,6 @@ $:isFixed = false;
 # Methods
 -------------------------------------------------------------- */
 onMount(()=>{
-  console.log(window.innerWidth)
   if(window.innerWidth >= 769){
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -60,6 +59,7 @@ onMount(()=>{
     h2 {
         font-family: $family-secondary;
         font-size: 2.5rem;
+        scale: 1;
         @include tablet{
           font-size: 6rem;
         }
@@ -68,8 +68,11 @@ onMount(()=>{
         }
     }
     &.is-fixed{
-      color: $tertiary;
-      transition: color 0.3s ease-in;
+      h2{
+        scale: 0.9;
+        color: $tertiary;
+        transition: scale 0.3s ease-in;
+      }
     }
   }
 </style>
