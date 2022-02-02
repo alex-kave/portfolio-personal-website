@@ -65,6 +65,7 @@ onMount(() => {
   figure{
     width: 100%;
     display: block;
+    margin: 0;
     img {
       display: block;
       width: 100%;
@@ -94,7 +95,6 @@ onMount(() => {
         z-index: 1;
       }
     }
-
   }
 }
 

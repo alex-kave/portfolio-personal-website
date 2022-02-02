@@ -4,20 +4,17 @@ import { onMount } from "svelte";
 
 
 export let videosrc:string;
-export let videoalt: string;
 export let videotype: string;
 export let videofigcaption: string;
 let component:HTMLVideoElement;
 let isMuted:Boolean = true;
 
 const playVideo = () => {
-    console.log('Hallo')
     component.play()
     isMuted = !isMuted;
 }
 
 const pauseVideo = () =>{
-    console.log('Bye')
     component.pause()
 }
 
@@ -26,7 +23,7 @@ const pauseVideo = () =>{
 </script>
 <svelte:options tag="video-play"/>
 <figure>
-    <video alt={videoalt} on:mouseenter={playVideo} on:mouseleave={pauseVideo} bind:this={component} type={videotype} muted={isMuted}>
+    <video on:touchstart={playVideo} on:touchend={pauseVideo} on:mouseenter={playVideo} on:mouseleave={pauseVideo} bind:this={component} type={videotype} muted={isMuted}>
         <source src={videosrc}>
         <track kind="captions">
     </video>
