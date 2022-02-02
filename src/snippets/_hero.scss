@@ -47,6 +47,7 @@
       width: 100%;
 
       @include desktop {
+        display: block;
         width: 50%;
       }
 
@@ -62,12 +63,18 @@
       }
 
       &__info {
+        align-items: center;
         background-color: $secondary;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding: 1rem 2rem;
         width: 100%;
+
+        @include tablet {
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 2rem 4rem;
+        }
 
         @include desktop {
           flex-direction: row;
@@ -77,6 +84,11 @@
     }
 
     &__cnt {
+      width: 100%;
+
+      @include desktop {
+        width: 50%;
+      }
     }
   }
 }

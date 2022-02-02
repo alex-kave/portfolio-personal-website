@@ -4,10 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 1rem 2rem;
-
-  img {
-    max-height: 150px;
-  }
+  width: 100%;
 
   [data-framework="vite"] {
     grid-column: 2;
