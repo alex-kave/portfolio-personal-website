@@ -22,4 +22,17 @@ export default {
       partialDirectory: resolve(__dirname, "src/partials"),
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        creativePlayground: resolve(
+          __dirname,
+          "/creativeplayground/index.html"
+        ),
+        impressum: resolve(__dirname, "/impressum/index.html"),
+        datenschutz: resolve(__dirname, "/datenschutz/index.html"),
+      },
+    },
+  },
 };
