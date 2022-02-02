@@ -1,0 +1,7 @@
+.columns {
+  &--reversed {
+    @include desktop {
+      flex-direction: row-reverse;
+    }
+  }
+}
