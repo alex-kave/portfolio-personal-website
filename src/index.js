@@ -22,4 +22,4 @@ import "./components/shared/FeatherIcon.svelte";
 //others
 import "./components/LogoAnimation/LogoAnimation.svelte";
 import "./components/PinnedSection/PinnedSection.svelte";
-import "./components/BackToTop/BackToTop.svelte";
+import "./components/BackTop/BackTop.svelte";
