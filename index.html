@@ -11,12 +11,12 @@
 
 <body>
   <div class="container">
-    {{>header}}
+    {{>header isHomePage="true"}}
     <div class="page-grid">
       <main>
         <section class="hero">
           <div class="hero-background">
-            <logo-animation animationdata="/src/assets/lottie/logo-alexander-driessen-lottie.json">
+            <logo-animation animationdata="/lottie/logo-alexander-driessen-lottie.json">
             </logo-animation>
           </div>
           <div class="container">
@@ -34,7 +34,6 @@
                   <a href="https://vuejs.org/" target="_blank" title="Vue JS Framework">Vue.js</a> für mich.
                 </p>
               </div>
-
               <div class="hero-wrap__portrait">
                 <div class="hero-wrap__portrait__img">
                   <img src="/src/assets/images/alexander-driessen-portrait-freisteller-schwarz-weiss.png"
@@ -79,13 +78,13 @@
                     ... schraube ich an alten Fahrrädern rum.
                   </li>
                 </ol>
-                <a href="/creativeplayground.html" alt="Mein Creative Playground" class="button is-text mt-4">
+                <a href="/creativeplayground/" alt="Mein Creative Playground" class="button is-text mt-4">
                   Hier gibt's mehr davon zu sehen
                 </a>
               </div>
               <div class="column is-6 is-4-desktop">
                 <image-animation type="dropshadow"
-                  imagesrc="/src/assets/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
+                  imagesrc="/images/alexander-driessen-schwarz-weiss-portrait-seitlich.jpg"
                   imagealt="Alexander Drießen">
                 </image-animation>
               </div>
@@ -132,17 +131,16 @@
               </div>
               <div class="column is-4-desktop">
                 <div class="tech-logos">
-                  <image-animation imagesrc="/src/assets/images/vite-logo.png" imagealt="Vite" type="tech-logo"
+                  <image-animation imagesrc="/images/vite-logo.png" imagealt="Vite" type="tech-logo"
                     data-framework="vite">
                   </image-animation>
-                  <image-animation imagesrc="/src/assets/images/Kirby-cms-logo.png" imagealt="Kirby CMS"
-                    type="tech-logo" data-framework="kirby">
+                  <image-animation imagesrc="/images/Kirby-cms-logo.png" imagealt="Kirby CMS" type="tech-logo"
+                    data-framework="kirby">
                   </image-animation>
-                  <image-animation imagesrc="/src/assets/images/svelte-logo.png" imagealt="Svelte" type="tech-logo"
+                  <image-animation imagesrc="/images/svelte-logo.png" imagealt="Svelte" type="tech-logo"
                     data-framework="svelte">
                   </image-animation>
-                  <image-animation imagesrc="/src/assets/images/vue-logo.png" imagealt="Vue" type="tech-logo"
-                    data-framework="vue">
+                  <image-animation imagesrc="/images/vue-logo.png" imagealt="Vue" type="tech-logo" data-framework="vue">
                   </image-animation>
                 </div>
               </div>
