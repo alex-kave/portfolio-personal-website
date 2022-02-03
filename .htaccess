@@ -4,7 +4,7 @@ AuthUserFile /var/www/virtual/alexkave/alexdriessen.de/.htpasswd
 Require valid-user
 
 # Error
-ErrorDocument 404 /error/404.html
+ErrorDocument 404  /error/404.html
 
 # rewrite rules
 <IfModule mod_rewrite.c>
