@@ -14,9 +14,14 @@ const scrollTop = () =>{
     .backtop{
         position: fixed;
         background-color: $secondary;
-        left: 4rem;
-        bottom: 4rem;
         opacity: 0;
+        left: 1rem;
+        bottom: 1rem;
+        @include desktop{
+            left: 4rem;
+            bottom: 4rem;
+        }
+        
         &:hover{
             background-color: darken($secondary, 10%);
         }

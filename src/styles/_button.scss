@@ -1,5 +1,6 @@
 .button {
   border-radius: 0;
+  font-weight: $weight-bold;
   transition: background-color 0.2s ease;
 
   &.is-secondary {

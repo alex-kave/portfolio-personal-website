@@ -39,5 +39,13 @@ html {
 
   body {
     overflow: hidden;
+
+    @include mobile {
+      font-size: 0.7rem;
+    }
+
+    @include desktop {
+      font-size: 1rem;
+    }
   }
 }
