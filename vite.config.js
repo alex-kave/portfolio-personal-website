@@ -15,8 +15,16 @@ export default {
     svelte({
       ...sveltePreprocess,
       compilerOptions: {
+        customElement: false,
+      },
+      exclude: /\.wc\.svelte$/,
+    }),
+    svelte({
+      ...sveltePreprocess,
+      compilerOptions: {
         customElement: true,
       },
+      include: /\.wc\.svelte$/,
     }),
     handlebars({
       partialDirectory: resolve(__dirname, "src/partials"),
@@ -32,6 +40,7 @@ export default {
         ),
         impressum: resolve(__dirname, "/impressum/index.html"),
         datenschutz: resolve(__dirname, "/datenschutz/index.html"),
+        error: resolve(__dirname, "/error/404.html"),
       },
     },
   },

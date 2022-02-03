@@ -1,13 +1,18 @@
 <script lang="ts">
 import { onMount } from "svelte";
 
-
-
+/*--------------------------------------------------------------
+# Vars
+--------------------------------------------------------------*/
 export let videosrc:string;
 export let videotype: string;
 export let videofigcaption: string;
 let component:HTMLVideoElement;
 let isMuted:Boolean = true;
+
+/*--------------------------------------------------------------
+# Methods
+--------------------------------------------------------------*/
 
 const playVideo = () => {
     component.play()
