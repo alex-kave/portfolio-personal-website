@@ -1,6 +1,8 @@
 .button {
   border-radius: 0;
+  font-family: $family-secondary;
   font-weight: $weight-bold;
+  padding: 1.5rem 3rem;
   transition: background-color 0.2s ease;
 
   &.is-secondary {
@@ -10,7 +12,6 @@
   }
 
   &.is-text {
-    font-family: $family-secondary;
     text-decoration: none;
 
     &::before {
