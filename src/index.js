@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 # Components
 --------------------------------------------------------------*/
 //shared
-import "./components/shared/ImageAnimation.svelte";
-import "./components/shared/VideoPlay.svelte";
-import "./components/shared/FeatherIcon.svelte";
+import "./components/shared/ImageAnimation.wc.svelte";
+import "./components/shared/VideoPlay.wc.svelte";
+import "./components/shared/FeatherIcon.wc.svelte";
 
 //others
-import "./components/LogoAnimation/LogoAnimation.svelte";
-import "./components/PinnedSection/PinnedSection.svelte";
-import "./components/BackTop/BackTop.svelte";
+import "./components/LogoAnimation/LogoAnimation.wc.svelte";
+import "./components/PinnedSection/PinnedSection.wc.svelte";
+import "./components/BackTop/BackTop.wc.svelte";
