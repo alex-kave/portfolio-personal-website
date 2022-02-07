@@ -12,12 +12,14 @@ const scrollTop = () =>{
 </div>
 <style lang="scss">
     .backtop{
+        display: none;
         position: fixed;
         background-color: $secondary;
         opacity: 0;
         left: 1rem;
         bottom: 1rem;
         @include desktop{
+            display: block;
             left: 4rem;
             bottom: 4rem;
         }
