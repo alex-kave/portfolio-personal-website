@@ -22,4 +22,5 @@ import "./components/shared/FeatherIcon.wc.svelte";
 //others
 import "./components/LogoAnimation/LogoAnimation.wc.svelte";
 import "./components/PinnedSection/PinnedSection.wc.svelte";
+import "./components/ImageToCursor/ImageToCursor.wc.svelte";
 import "./components/BackTop/BackTop.wc.svelte";

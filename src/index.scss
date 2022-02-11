@@ -39,6 +39,7 @@ html {
 
   body {
     overflow: hidden;
+    position: relative;
 
     @include mobile {
       font-size: 0.7rem;
@@ -46,6 +47,33 @@ html {
 
     @include desktop {
       font-size: 1rem;
+    }
+
+    &.creative-playground {
+      &::before,
+      &::after {
+        content: "";
+        height: 100%;
+        inset: 0;
+        mask-image: radial-gradient(white, transparent 80%);
+        mix-blend-mode: multiply;
+        position: absolute;
+        z-index: -1;
+      }
+
+      &::before {
+        background: $black;
+        filter: url("/src/assets/svg/noise-background.svg#noiseFilter");
+      }
+
+      &::after {
+        background: linear-gradient(
+          0deg,
+          hsl(224deg 100% 95%) 0%,
+          hsl(292deg 100% 85%) 50%,
+          hsl(0deg 100% 75%) 100%
+        );
+      }
     }
   }
 }

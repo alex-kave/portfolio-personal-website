@@ -38,6 +38,8 @@ const pauseVideo = () =>{
 </figure>
 <style lang="scss">
     figure{
+        box-shadow: $box-shadow;
+        position: relative;
         width: 100%;
         margin: 0;
         height: 100%;
@@ -46,6 +48,14 @@ const pauseVideo = () =>{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        figcaption {
+            font-family: $family-primary;
+            font-weight: $weight-bold;;
+            left: -8%;
+            position: absolute;
+            rotate: -90deg;
+            transform-origin: 0 0;
         }
     }
 </style>

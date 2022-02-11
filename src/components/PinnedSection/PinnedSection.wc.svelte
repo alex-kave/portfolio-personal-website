@@ -70,7 +70,7 @@ onMount(()=>{
     &.is-fixed{
       h2{
         scale: 0.9;
-        color: $tertiary;
+        color: $white;
         transition: scale 0.3s ease-in;
       }
     }
