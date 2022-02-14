@@ -1,3 +1,14 @@
 .footer {
   background-color: $tertiary;
+  padding: 3rem 1.5rem;
+
+  a {
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .creative-playground & {
+    background-color: transparent;
+  }
 }
