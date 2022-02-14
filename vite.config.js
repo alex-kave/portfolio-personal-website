@@ -41,6 +41,7 @@ export default {
         impressum: resolve(__dirname, "/impressum/index.html"),
         datenschutz: resolve(__dirname, "/datenschutz/index.html"),
         error: resolve(__dirname, "/error/404.html"),
+        cases: resolve(__dirname, "/cases/index.html"),
       },
     },
   },

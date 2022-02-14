@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ich bin Alex, 23 Jahre alt, Front-End-Entwickler und Mediengestalter aus Köln. Ich entwickle und gestalte digitale Erlebnisse.">
+    <title>Alexander Drießen</title>
+</head>
+
+<body>
+    <div class="container">
+        {{>header}}
+        <div class="page-grid">
+            <main>
+                <section class="hero">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <h1 class="title is-size-1">
+                                Cases
+                            </h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="section is-large pt-6">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column has-text-centered">
+                                <h3 class="title is-size-5 has-text-grey-light">
+                                    Disclaimer
+                                </h3>
+                                <p class="is-small has-text-grey-light mb-6 is-block">
+                                    Die folgenden Projekte wurden nicht ausschließlich von mir alleine umgesetzt.<br />
+                                    Sie
+                                    sind im Zeitraum meiner Anstellung bei der <a href="https://agentur-fahrenheit.de"
+                                        target="_blank">Agentur
+                                        Fahrenheit</a> in Zusammenarbeit mit
+                                    dem Team entstanden.<br />
+                                </p>
+                            </div>
+                        </div>
+                        <image-to-cursor headline="Direktmacher"
+                            content="Direktmacher erhöht die Direktbuchung für Hotels. Der neu gestaltete und technisch überholte Onepager unterstützt Daniel und sein Team dabei."
+                            imgsrc="/images/alexander-driessen-cases-direktmacher-mockup.png"
+                            caselink="https://direktmacher.de">
+                        </image-to-cursor>
+                        <image-to-cursor headline="Novatec"
+                            content="Novatec steht für maßgeschneiderte Sicherheitslösungen für Handel & Industrie. Hier geht es zur frisch gelaunchten Unternehmenswebsite."
+                            imgsrc="/images/alexander-driessen-cases-novatec-mockup.png"
+                            caselink="https://novatec-europe.net">
+                        </image-to-cursor>
+                        <image-to-cursor headline="Bagno Badstudio"
+                            content="Seit 20 Jahren ist Bagno Badstudio der Badsanierer und Badrenovierer für Mainz und Umgebung."
+                            imgsrc="/images/alexander-driessen-cases-bagno-badstudio-mockup.png"
+                            caselink="https://bagno-mainz.de">
+                        </image-to-cursor>
+                    </div>
+                </section>
+            </main>
+            {{>socialnav}}
+        </div>
+    </div>
+    {{>footer}}
+    <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>

@@ -40,7 +40,7 @@ const toggleImageVisible = () =>{
             {content}
         </p>
         {/if}
-        {#if imgIsVisible}
+        {#if imgIsVisible || window.innerWidth < 769}
             <img transition:fade src={imgsrc} alt={imgalt} bind:this={imgElement}>
         {/if}
     </div>
@@ -50,8 +50,12 @@ const toggleImageVisible = () =>{
         color: $primary;
         text-decoration: none;
         .case-wrap{
-        height: 80vh;
         position: relative;
+        padding: 2rem 0;
+        @include desktop{
+            padding: 0;
+            height: 80vh;
+        }
         &:hover{
             cursor: pointer;
             h2{
@@ -61,23 +65,34 @@ const toggleImageVisible = () =>{
         }
             h2{
                 font-family: $family-secondary;
-                font-size: 8rem;
-                position: relative;
-                z-index: 2;
-            }
-            p{
                 font-size: 2rem;
                 position: relative;
                 z-index: 2;
-                width: 50%;
+                @include desktop{
+                    font-size: 8rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                @include desktop{
+                    font-size: 2rem;
+                    width: 60%;
+                }
             }
             img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform-origin: center center;
-                max-width: 800px;
-                z-index: 1;
+                position: relative;
+                width: 100%;
+                @include desktop{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform-origin: center center;
+                    width: 800px;
+                    z-index: 1;
+                }
             }
         }
     }
