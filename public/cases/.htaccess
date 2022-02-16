@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "DEV"
+AuthUserFile /var/www/virtual/alexkave/alexdriessen.de/cases/.htpasswd
+Require valid-user
