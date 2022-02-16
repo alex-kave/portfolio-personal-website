@@ -45,7 +45,7 @@ const toggleImageVisible = () =>{
             {content}
         </p>
         {/if}
-        {#if imgIsVisible || window.innerWidth < 769}
+        {#if imgIsVisible || window.innerWidth < 1024}
             <img style={`left:${$coords.x}px; top:${$coords.y}px`} transition:fade src={imgsrc} alt={imgalt} bind:this={imgElement}>
         {/if}
     </div>
