@@ -44,6 +44,7 @@ const pauseVideo = () =>{
         margin: 0;
         height: 100%;
         object-fit: cover;
+        margin-bottom: 0.5rem;
         video{
             display: block;
             width: 100%;
@@ -51,12 +52,16 @@ const pauseVideo = () =>{
             object-fit: cover;
         }
         figcaption {
+            display: none;
             font-family: $family-primary;
             font-weight: $weight-bold;
             left: 0;
             margin-top: 0.5rem;
             position: absolute;
             transform-origin: 0 0;
+            @include tablet{
+                display: block;
+            }
             @include desktop {
                 left: -8%;
                 padding: 0 1rem;
