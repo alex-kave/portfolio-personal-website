@@ -3,6 +3,8 @@
 # Imports
 --------------------------------------------------------------*/
 import { fade } from 'svelte/transition';
+import { spring } from 'svelte/motion';
+
 /* --------------------------------------------------------------
 # Vars
 -------------------------------------------------------------- */
@@ -15,12 +17,15 @@ export let caselink:string
 
 let imgElement:HTMLElement
 let imgIsVisible:Boolean = false
+let coords = spring({ x: 0, y: 0 }, {
+		stiffness: 0.1,
+		damping: 1
+	});
 /* --------------------------------------------------------------
 # Methods
 -------------------------------------------------------------- */
 const handleMousemove = (e) =>{
-    imgElement.style.left = `${e.clientX * 0.5}px`
-    imgElement.style.top = `${e.clientY * 0.5}px`
+    coords.set({x: e.clientX/2, y: e.clientY/2})
 }
 
 const toggleImageVisible = () =>{
@@ -41,7 +46,7 @@ const toggleImageVisible = () =>{
         </p>
         {/if}
         {#if imgIsVisible || window.innerWidth < 769}
-            <img transition:fade src={imgsrc} alt={imgalt} bind:this={imgElement}>
+            <img style={`left:${$coords.x}px; top:${$coords.y}px`} transition:fade src={imgsrc} alt={imgalt} bind:this={imgElement}>
         {/if}
     </div>
 </a>
@@ -68,6 +73,11 @@ const toggleImageVisible = () =>{
                 font-size: 2rem;
                 position: relative;
                 z-index: 2;
+                text-align: center;
+
+                @include tablet{
+                    text-align: left;
+                }
                 @include desktop{
                     font-size: 8rem;
                 }
@@ -77,6 +87,7 @@ const toggleImageVisible = () =>{
                 position: relative;
                 z-index: 2;
                 width: 100%;
+                padding: 2rem;
                 @include desktop{
                     font-size: 2rem;
                     width: 60%;
@@ -85,11 +96,12 @@ const toggleImageVisible = () =>{
             img{
                 position: relative;
                 width: 100%;
+                box-shadow: $box-shadow;
                 @include desktop{
                     position: absolute;
                     top: 0;
                     left: 0;
-                    transform-origin: center center;
+                    transform-origin: top left;
                     width: 800px;
                     z-index: 1;
                 }
