@@ -5,6 +5,11 @@
   padding: 1.5rem 3rem;
   transition: background-color 0.2s ease;
 
+  @include mobile {
+    font-size: 0.75rem;
+    width: 100%;
+  }
+
   &.is-secondary {
     &:hover {
       background-color: darken($secondary, 10%);
@@ -20,8 +25,9 @@
       content: "";
       display: inline-block;
       height: 25%;
-      left: 0;
+      left: 50%;
       position: absolute;
+      transform: translateX(-50%);
       transition: width 0.2s ease;
       width: 0;
       z-index: -1;

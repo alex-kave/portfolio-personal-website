@@ -1,6 +1,5 @@
 .image-grid {
   @include tablet {
-    display: grid;
     gap: 2rem;
     grid-template-columns: repeat(12, 1fr);
 
@@ -13,18 +12,27 @@
   video,
   img {
     box-shadow: $box-shadow;
+    display: block;
     height: 100%;
+    margin-bottom: 0.5rem;
     object-fit: cover;
     position: relative;
     width: 100%;
 
     figcaption {
+      display: block;
       font-family: $family-primary;
       font-weight: $weight-bold;
-      left: -8%;
+      height: 100%;
+      left: 0;
+      margin-top: 0.5rem;
       position: absolute;
-      rotate: -90deg;
-      transform-origin: 0 0;
+
+      @include desktop {
+        left: -8%;
+        padding: 0 1rem;
+        transform: rotate(-90deg);
+      }
     }
   }
 
@@ -151,7 +159,7 @@
 
       @include desktop {
         grid-column: 1/7;
-        grid-row: 4/5;
+        grid-row: 3/5;
       }
     }
 
@@ -182,11 +190,11 @@
     .photography__tree {
       @include tablet {
         grid-column: 1/7;
-        grid-row: 5/7;
+        grid-row: 4/6;
       }
 
       @include desktop {
-        grid-column: 4/9;
+        grid-column: 4/10;
         grid-row: 5/7;
       }
     }

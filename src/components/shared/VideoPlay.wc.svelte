@@ -45,17 +45,23 @@ const pauseVideo = () =>{
         height: 100%;
         object-fit: cover;
         video{
+            display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
         figcaption {
             font-family: $family-primary;
-            font-weight: $weight-bold;;
-            left: -8%;
+            font-weight: $weight-bold;
+            left: 0;
+            margin-top: 0.5rem;
             position: absolute;
-            rotate: -90deg;
             transform-origin: 0 0;
+            @include desktop {
+                left: -8%;
+                padding: 0 1rem;
+                transform: rotate(-90deg);
+            }
         }
     }
 </style>

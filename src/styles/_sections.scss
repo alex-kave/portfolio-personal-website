@@ -13,5 +13,11 @@
   &#uebermich {
     position: relative;
     z-index: 2;
+
+    .button {
+      @include mobile {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

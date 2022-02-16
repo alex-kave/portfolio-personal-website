@@ -1,6 +1,6 @@
 .columns {
   &--reversed {
-    @include desktop {
+    @include tablet {
       flex-direction: row-reverse;
     }
   }

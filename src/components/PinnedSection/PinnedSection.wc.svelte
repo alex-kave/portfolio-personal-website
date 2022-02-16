@@ -59,7 +59,7 @@ onMount(()=>{
     h2 {
         font-family: $family-secondary;
         font-size: 2.5rem;
-        scale: 1;
+        transform: scale(1);
         @include tablet{
           font-size: 6rem;
         }
@@ -69,9 +69,9 @@ onMount(()=>{
     }
     &.is-fixed{
       h2{
-        scale: 0.9;
+        transform: scale(0.9);
         color: $white;
-        transition: scale 0.3s ease-in;
+        transition: transform 0.3s ease-in;
       }
     }
   }
